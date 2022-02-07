@@ -1,7 +1,8 @@
 pipeline {
   agent {
-    node {
-      label 'nodetest'
+    docker { 
+      image 'node:16.13.1-alpine'
+      args '-p 3000:3000'
     }
 
   }
