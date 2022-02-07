@@ -21,5 +21,11 @@ pipeline {
       }
     }
 
+    stage('final') {
+      steps {
+        sh './jenkins/scripts/build.sh'
+      }
+    }
+
   }
 }
