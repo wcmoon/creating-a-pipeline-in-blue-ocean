@@ -7,8 +7,8 @@ echo 'in production mode and optimizes the build for the best performance.'
 set -x
 rm -rf build
 npm run build
-rm dist.zip
-zip -p -r dist.zip build
+rm dist.tar
+tar -cvf dist.tar build
 set +x
 
 
