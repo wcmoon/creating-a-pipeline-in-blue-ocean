@@ -15,7 +15,7 @@ pipeline {
     stage('final') {
       steps {
         sh './jenkins/scripts/deliver.sh'
-        archiveArtifacts(artifacts: 'dist.zip', allowEmptyArchive: true)
+        archiveArtifacts(artifacts: 'dist.tar', allowEmptyArchive: true)
       }
     }
 
